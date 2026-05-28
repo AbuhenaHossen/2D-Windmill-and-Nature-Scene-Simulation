@@ -1,0 +1,3 @@
+This project is a 2D Windmill and Nature Scene Simulation using OpenGL. It demonstrates a simple computer graphics environment with a rotating windmill placed on a green landscape along with a tree.
+The windmill blades rotate continuously using an angle update mechanism, simulating real wind-driven motion. The speed of rotation can be controlled using keyboard input (S key), allowing the animation to switch between different speed levels.
+The scene includes a ground area and a tree to represent a natural environment, making the animation more realistic and visually appealing. The project mainly focuses on basic OpenGL drawing functions, transformations (translation and rotation), and real-time animation using a timer function.
