@@ -3,14 +3,14 @@ from OpenGL.GLUT import *
 from OpenGL.GLU import *
 
 angle = 0.0
-speed = 2.0   # initial speed
+speed = 2.0  
 
 def init():
     glClearColor(0.5, 0.8, 1.0, 1.0)
     gluOrtho2D(-1, 1, -1, 1)
 
 def draw_house():
-    # House body
+   
     glColor3f(0.8, 0.5, 0.3)
     glBegin(GL_QUADS)
     glVertex2f(-0.8, -0.3)
@@ -19,7 +19,7 @@ def draw_house():
     glVertex2f(-0.8, 0.05)
     glEnd()
 
-    # Roof
+   
     glColor3f(0.6, 0.1, 0.1)
     glBegin(GL_TRIANGLES)
     glVertex2f(-0.85, 0.05)
@@ -27,7 +27,7 @@ def draw_house():
     glVertex2f(-0.45, 0.05)
     glEnd()
 
-    # Door
+   
     glColor3f(0.3, 0.2, 0.1)
     glBegin(GL_QUADS)
     glVertex2f(-0.68, -0.3)
@@ -39,7 +39,7 @@ def draw_house():
 def draw_scene():
     glClear(GL_COLOR_BUFFER_BIT)
 
-    # Ground
+   
     glBegin(GL_QUADS)
     glColor3f(0.2, 0.8, 0.2)
     glVertex2f(-1, -1)
@@ -48,10 +48,10 @@ def draw_scene():
     glVertex2f(-1, -0.3)
     glEnd()
 
-    # House (NEW)
+   
     draw_house()
 
-    # Tower
+   
     glColor3f(0.6, 0.6, 0.6)
     glBegin(GL_QUADS)
     glVertex2f(-0.05, -0.3)
@@ -60,7 +60,7 @@ def draw_scene():
     glVertex2f(-0.05, 0.4)
     glEnd()
 
-    # Blades
+  
     glPushMatrix()
     glTranslatef(0, 0.4, 0)
     glRotatef(angle, 0, 0, 1)
